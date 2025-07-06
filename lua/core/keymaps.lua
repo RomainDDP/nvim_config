@@ -16,3 +16,7 @@ keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)  -- Search in files
 
 -- Leap keymaps. :h leap-custom-mappings if needed.
 vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
+
+-- Neo Tree keymap
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { silent = true, noremap = true })
+

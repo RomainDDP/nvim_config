@@ -1,16 +1,9 @@
 return {
- 	 -- the colorscheme should be available when starting Neovim
-  	{
-   	"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-      	vim.cmd([[colorscheme tokyonight]])
-    	end,
-  	},
-	{
-		"ellisonleao/gruvbox.nvim",
-		lazy = false,
-		priority = 1000,
-	}
+	"savq/melange-nvim",
+	lazy = false,
+	name = "melange", 	-- Je crois pas nécessaire mais sait-on jamais.
+	priority = 1000, 	-- Important de le charger dès le lancement de NVIM ! 
+	config = function()
+		vim.cmd.colorscheme "melange"
+	end,
 }

@@ -1,19 +1,27 @@
-return {
-	"mason-org/mason-lspconfig.nvim",
+local lsp_servers = {
+	"lua_ls",
+	"pylsp",
+	"clangd",
+}
 
-	opts = {
-		ensure_installed = { "lua_ls"},
+return {
+	{
+		"mason-org/mason.nvim",
+		opts = {},
 	},
 
-	dependencies = {
-		{
-			"mason-org/mason.nvim", opts = {}
+	{
+		"mason-org/mason-lspconfig.nvim",
+
+		opts = {
+			ensure_installed = lsp_servers,
 		},
-		{
-			"neovim/nvim-lspconfig",
-			keys = {
-				{"<Leader>ca", vim.lsp.buf.code_action},
-			}
-		}
+	},
+
+	{
+		"neovim/nvim-lspconfig",
+		opts = function ()
+
+		end,
 	},
 }

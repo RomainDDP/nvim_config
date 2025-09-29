@@ -20,8 +20,5 @@ return {
 
 	{
 		"neovim/nvim-lspconfig",
-		opts = function ()
-
-		end,
 	},
 }

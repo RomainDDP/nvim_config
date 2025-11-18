@@ -7,7 +7,4 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	lazy = false, -- Neo-Tree se lazy load par lui même.
-	keys = {
-		{ "²", ":Neotree toggle<CR>" },
-	},
 }

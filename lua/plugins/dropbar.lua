@@ -8,7 +8,7 @@ return {
 
 	keys = {
 		{ "<leader>;",
-			function ()
+			function()
 				require('dropbar.api').pick()
 			end,
 		},

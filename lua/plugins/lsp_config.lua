@@ -1,7 +1,7 @@
 local lsp_servers = {
 	"lua_ls",
-	"pylsp",
 	"clangd",
+	"svls"
 }
 
 return {

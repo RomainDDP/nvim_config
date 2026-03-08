@@ -4,7 +4,7 @@ return {
 
 	opts = {
 		options = {
-			theme = 'gruvbox-material'
+			theme = 'melange'
 		},
 
 		sections = {

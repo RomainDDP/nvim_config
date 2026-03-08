@@ -1,15 +1,15 @@
 return {
-	'Bekaboo/dropbar.nvim',
+	"Bekaboo/dropbar.nvim",
 	dependencies = {
-		'nvim-telescope/telescope-fzf-native.nvim',
-		build = 'make'
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
 	lazy = false,
 
 	keys = {
-		{ "<leader>;",
+		{
+			"<leader>;",
 			function()
-				require('dropbar.api').pick()
+				require("dropbar.api").pick()
 			end,
 		},
 	},

@@ -7,4 +7,10 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	lazy = false, -- Neo-Tree se lazy load par lui même.
+
+	opts = {
+    	filesystem = {
+      		hijack_netrw_behavior = "open_default",
+    	},
+  	},
 }

@@ -17,13 +17,20 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-
 -- Setup lazy.nvim
-require("lazy").setup("plugins", {
+require("lazy").setup({
+
+	spec = {
+		{import = "plugins" },
+	},
 
 	-- Check auto pour les updates de plugins.
 	checker = {
 		enabled = true,
-		notify = false
+		notify = false,
+	},
+
+	rocks = {
+		enabled = false,		
 	},
 })

@@ -9,5 +9,3 @@ require("core.autocmd")
 
 -- Charge les keymaps.
 require("core.mappings")
-
-

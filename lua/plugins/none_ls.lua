@@ -7,7 +7,6 @@ return {
 
 		local formatters = {
 			"stylua",
-			"verible_verilog_format",
 			-- "black",
 			-- "isort",
 			-- "prettierd",
@@ -30,14 +29,9 @@ return {
 
 			-- keymap on attach de cette façon elle n'existe pas si il n'y a pas de formatter dispo.
 			on_attach = function(client, bufnr)
-				vim.keymap.set(
-					"n",
-					"<leader>fm",
-					function()
-						vim.lsp.buf.format({ async = true })
-					end,
-					{ buffer = bufnr, silent = true }
-				)
+				vim.keymap.set("n", "<leader>fm", function()
+					vim.lsp.buf.format({ async = true })
+				end, { buffer = bufnr, silent = true })
 			end,
 		})
 	end,

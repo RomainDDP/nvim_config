@@ -2,7 +2,7 @@
 
 -- for line break if too long, and only on certain filetype
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-	pattern = { "*.md", "*.txt", "*.log" },
+	pattern = { "*.md", "*.txt", "*.log", "*.json" },
 	callback = function()
 		vim.opt_local.wrap = true
 		vim.opt_local.linebreak = true

@@ -22,4 +22,5 @@ map("n", "gr", vim.lsp.buf.references, opts)
 map("n", "K", vim.lsp.buf.hover, opts)
 map("n", "<leader>rn", vim.lsp.buf.rename, opts)
 map("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+map("n", "<leader>e", vim.diagnostic.open_float, opts)
 
